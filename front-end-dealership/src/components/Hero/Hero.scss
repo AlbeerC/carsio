@@ -1,0 +1,14 @@
+@import '../../scss/variables';
+
+.hero {
+    width: 100%;
+    height: 70vh;
+    background-image: url(../../assets/background-208.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include responsive(tablet) {
+        background-position: right;
+    }
+}

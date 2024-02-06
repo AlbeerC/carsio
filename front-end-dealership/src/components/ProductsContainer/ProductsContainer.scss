@@ -1,0 +1,118 @@
+@import '../../scss/variables';
+
+.products-container {
+    padding: 0 2rem;
+
+    input {
+        padding: 1rem;
+        width: 30%;
+        display: block;
+        border: 1px solid #000000;
+        border-radius: .5rem;
+        font-size: 2rem;
+        margin: 5rem auto;
+
+        @include responsive(pc) {
+            width: 70%;
+            font-size: 1.7rem;
+        }
+
+        &::placeholder {
+            font-size: 2rem;
+        }
+    }
+
+    .flex {
+        display: flex;
+
+        @include responsive(tablet) { 
+            gap: 3rem;
+        }
+
+        .filters {
+            height: 100%;
+            width: 15vw;
+            position: sticky;
+            top: 0;
+            left: 0;
+            
+            @include responsive(tablet) {
+                width: auto;
+            }
+
+            .top {
+                display: flex;
+                justify-content: flex-start;
+                gap: 1rem;
+                align-items: center;
+                font-weight: bold;
+                margin-top: 2rem;
+
+                @include responsive(tablet) {
+                    display: none;
+                }
+        
+                svg {
+                    width: 4rem;
+                    height: 4rem;
+                }
+        
+                p {
+                    font-size: 2rem;
+                }
+            }
+        
+            .selects {
+        
+                .select {
+                    margin: 2rem 0;
+                    border-bottom: 1px solid #e1e1e1;
+                  
+                    .category {
+                      display: inline-flex;
+                      gap: .5rem;
+                      align-items: center;
+                      cursor: pointer;
+                  
+                      p {
+                        font-size: 2rem;
+                        padding-bottom: .7rem;
+
+                        @include responsive(tablet) {
+                            font-size: 1.5rem;
+                        }
+                      }
+                  
+                      svg {
+                        width: 2rem;
+                        height: 2rem;
+                      }
+                    }
+                  
+                    .checks {
+                      display: none;
+                      flex-direction: column;
+                      justify-content: flex-start;
+                      gap: 1rem;
+                  
+                      span {
+                        font-size: 1.7rem;
+                      }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.open {
+    display: flex !important;
+}
+
+.not-found {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: $subtitleFont;
+}

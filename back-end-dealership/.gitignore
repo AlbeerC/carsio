@@ -1,0 +1,9 @@
+node_modules
+.tmp
+build
+.env
+.env.example
+.strapi
+config
+database
+.editorconfig

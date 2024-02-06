@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "year": {
+      "type": "biginteger",
+      "min": "1950",
+      "max": "2025",
+      "required": true
+    },
+    "color": {
+      "type": "string",
+      "required": true
+    },
+    "brand": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "biginteger",
+      "required": true,
+      "min": "1"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "transmission": {
+      "type": "string",
+      "required": true,
+      "maxLength": 15
+    },
+    "km": {
+      "type": "biginteger"
+    },
+    "version": {
+      "type": "text"
+    },
+    "images": {
+      "type": "json"
+    }
+  }
+}

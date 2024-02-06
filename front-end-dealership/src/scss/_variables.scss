@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+
+//Fonts
+$mainFont: 'Inter', sans-serif;
+$subtitleFont: 'Khand', sans-serif;
+$titleFont: 'Black Ops One', system-ui;
+
+
+//Colors
+$main: #ff3131;
+
+
+
+//Mixin responsive
+$pc: 992px;
+$tablet: 768px;
+
+@mixin responsive ($medida) {
+    @if $medida == pc {
+        @media (max-width: $pc) {
+            @content;
+        }
+    } @else if $medida == tablet {
+        @media (max-width: $tablet) {
+            @content;
+        }
+    }
+}

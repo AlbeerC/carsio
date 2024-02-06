@@ -1,0 +1,20 @@
+@import './variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 16px;
+    font-family: $mainFont;
+    background-color: #e3e3e3;
+    color: #000;
+}
+h1, h2 {
+    font-weight: bold;
+    font-family: $titleFont;
+}

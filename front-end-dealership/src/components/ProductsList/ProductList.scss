@@ -1,0 +1,15 @@
+@import '../../scss/variables';
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 85vw;
+    column-gap: 3rem;
+
+    @include responsive(tablet) {
+        width: auto;
+        justify-content: flex-end;
+    }
+}
